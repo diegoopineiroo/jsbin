@@ -1,3 +1,6 @@
+
+// RECURSO JS 1: Intercambio de imágenes al hacer clic
+
 let imagenPrincipal = document.querySelector('#imagen-principal');
 
 imagenPrincipal.addEventListener('click', function() {
@@ -12,6 +15,8 @@ imagenPrincipal.addEventListener('click', function() {
   }
 });
 
+
+// RECURSO JS 2: Campo de texto que cambia texto de la web 
 
 let inputNombre = document.querySelector('#nombre-usuario');
 let botonCambiar = document.querySelector('#btn-cambiar');
@@ -58,9 +63,9 @@ window.addEventListener('load', function() {
 });
 
 
-// ========================================
-// RECURSO JS 3: Objeto en movimiento (20 pts)
-// ========================================
+
+// RECURSO JS 3: Objeto en movimiento
+
 let objetoMovil = document.querySelector('#objeto-movil');
 
 // Cambiar emoji al hacer clic
@@ -77,7 +82,6 @@ objetoMovil.addEventListener('click', function() {
     objetoMovil.style.animation = 'mover 3s ease-in-out infinite';
   }, 10);
 });
-
 
 // Efecto de scroll suave para las secciones
 document.querySelectorAll('a[href^="#"]').forEach(function(enlace) {
