@@ -2,27 +2,90 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego - Mi Espacio Personal</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>Bienvenido a mi página</h1>
-  
-  <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=500" alt="Imagen de Diego">
-  
-  <p>¡Hola! Soy <strong>Diego</strong>, estudiante de 2º de Bachillerato de Ciencias. Esta es mi primera página web y aquí te cuento un poco sobre mí.</p>
-  
-  <h2>Lo me gusta</h2>
-  <ul>
-    <li>🎵 Música - Escuchar musica a todas horas</li>
-    <li>💪 Gimnasio - Entrenar y ponerme fuerte</li>
-    <li>🥋 MMA - Artes marciales mixtas y la disciplina que estas tienen</li>
-    <li>🔬 Ciencias - Lo que me gustaría estudiar en un futuro</li>
-  </ul>
-  
-  <h2>Mis objetivos</h2>
-  <p>Terminar Bachillerato con buenas notas, seguir mejorando en mis entrenamientos de MMA y nunca dejar de aprender cosas nuevas cada día.</p>
-  <p>Más información sobre MMA y kickboxing: <a href="https://es.wikipedia.org/wiki/Artes_marciales_mixtas" target="_blank">Wikipedia MMA</a></p>
-  <button>Cambiar nombre de visitante</button>
+  <header>
+    <h1 id="titulo-principal">Bienvenido a mi página</h1>
+    <p class="subtitulo">Diego - Estudiante de Ciencias</p>
+  </header>
+
+  <main>
+    <!-- Sección principal con imagen intercambiable -->
+    <section class="hero">
+      <img id="imagen-principal" 
+           src="images/perfil1.jpg" 
+           alt="Imagen de Diego" 
+           title="Haz clic para cambiar la imagen">
+      
+      <div class="texto-hero">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy <strong>Diego</strong>, estudiante de 2º de Bachillerato de Ciencias. Esta es mi primera página web y aquí te cuento un poco sobre mí.</p>
+      </div>
+    </section>
+
+    <!-- Sección de intereses -->
+    <section class="intereses">
+      <h2>Lo que me gusta</h2>
+      <ul>
+        <li>🎵 Música - Escuchar música a todas horas</li>
+        <li>💪 Gimnasio - Entrenar y ponerme fuerte</li>
+        <li>🥋 MMA - Artes marciales mixtas y la disciplina que estas tienen</li>
+        <li>🔬 Ciencias - Lo que me gustaría estudiar en un futuro</li>
+      </ul>
+    </section>
+
+    <!-- Sección interactiva con campo de texto -->
+    <section class="personalizar">
+      <h2>Personaliza tu experiencia</h2>
+      <p>Escribe tu nombre para personalizar el saludo:</p>
+      <div class="form-grupo">
+        <input type="text" 
+               id="nombre-usuario" 
+               placeholder="Tu nombre aquí"
+               aria-label="Introduce tu nombre">
+        <button id="btn-cambiar">Aplicar cambio</button>
+      </div>
+    </section>
+
+    <!-- Sección de objetivos -->
+    <section class="objetivos">
+      <h2>Mis objetivos</h2>
+      <p>Terminar Bachillerato con buenas notas, seguir mejorando en mis entrenamientos de MMA y nunca dejar de aprender cosas nuevas cada día.</p>
+      
+      <div class="enlaces-externos">
+        <p><strong>Recursos de interés:</strong></p>
+        <a href="https://es.wikipedia.org/wiki/Artes_marciales_mixtas" 
+           target="_blank" 
+           title="Información sobre Artes Marciales Mixtas">
+          📚 Wikipedia MMA
+        </a>
+        <a href="https://es.wikipedia.org/wiki/Kickboxing" 
+           target="_blank" 
+           title="Información sobre Kickboxing">
+          🥊 Wikipedia Kickboxing
+        </a>
+        <a href="https://developer.mozilla.org/es/" 
+           target="_blank" 
+           title="Documentación web para desarrolladores">
+          💻 MDN Web Docs
+        </a>
+      </div>
+    </section>
+
+    <!-- Objeto en movimiento (emoji animado) -->
+    <div id="objeto-movil" title="Emoji animado - Haz clic para cambiar">💪</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Diego - Mi primera página web</p>
+    <p>Proyecto basado en el tutorial de <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web" target="_blank" title="Tutorial MDN Web Docs">MDN Web Docs</a></p>
+    <p>Diseño inspirado en: <a href="https://elpais.com/especiales/2019/cambio-climatico-cumbre-del-clima/" target="_blank" title="Estética moderna y limpia">El País - Cumbre del Clima</a></p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
